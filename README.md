@@ -2,8 +2,8 @@
 
 A frontend-only patient registration and SQL query interface built using **React** and **PGlite**. This app runs entirely in the browser — no backend or external database required.
 
-🟢 [Live Demo on Vercel](https://patient-registration-silk.vercel.app/)
-*https://patient-registration-silk.vercel.app/*
+🟢 [Live Demo on Vercel:  ](https://patient-registration-silk.vercel.app/)
+   https://patient-registration-silk.vercel.app/
 ---
 
 ## ✨ Features
