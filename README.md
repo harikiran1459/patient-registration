@@ -2,8 +2,8 @@
 
 A frontend-only patient registration and SQL query interface built using **React** and **PGlite**. This app runs entirely in the browser — no backend or external database required.
 
-🟢 [Live Demo on Vercel](https://patient-registration-steel.vercel.app/)
-
+🟢 [Live Demo on Vercel](https://patient-registration-silk.vercel.app/)
+*https://patient-registration-silk.vercel.app/*
 ---
 
 ## ✨ Features
@@ -21,20 +21,22 @@ A frontend-only patient registration and SQL query interface built using **React
 Each major feature is documented with a clear Git commit:
 
 ```
-4fcd3ff Initialize project with Vite + React setup
-462805d Set up persistent SQLite database with PGlite and IndexedDB
-b109971 Add helper methods: initDB, syncQuery, and getPatients for managing patient records
-8487d90 Implement BroadcastChannel in db.js for real-time cross-tab communication
-128002c Create PatientForm component to register new patients and submit to PGlite
-0d3401c Integrate broadcast message after patient registration for live updates in other tabs
-f030a3c Add form validation, submission state, and UX feedback (alert + button loading)
-0d29d29 Build SQLQuery component to allow running custom SQL commands in-browser
-9cfe3f3 Add textarea and basic UI to display SQL query results as JSON
-3060428 Update App.jsx to manage tab navigation (Register / Query), handle loading & error states
-8caa9d2 Use effect hook to initialize DB, load patients, and subscribe to BroadcastChannel updates
-8204044 Render patient list dynamically and allow retry if loading fails
-4fc0b33 Fix WASM loading issue in vite.config.js with assetsInclude
-ef37caa (HEAD -> main, origin/main) Exclude @electric-sql/pglite from Vite dependency optimization to avoid runtime conflicts
+40aba39 Initialize project with Vite + React setup    
+dc53067 Set up persistent SQLite database with PGlite and IndexedDB
+bb4db85 Add helper methods: initDB, syncQuery, and getPatients for managing patient records
+db3f2bd Implement BroadcastChannel in db.js for real-time cross-tab communication
+4d83e07 Create PatientForm component to register new patients and submit to PGlite
+b0dde9e Integrate broadcast message after patient registration for live updates in other tabs
+ba36123 Add form validation, submission state, and UX feedback (alert + button loading)
+b1c1bbe Build SQLQuery component to allow running custom SQL commands in-browser
+c2655d9 Add textarea and basic UI to display SQL query results as JSON
+60ae71a Update App.jsx to manage tab navigation (Register / Query), handle loading & error states
+92e6503 Use effect hook to initialize DB, load patients, and subscribe to BroadcastChannel updates
+f87e46c Render patient list dynamically and allow retry if loading fails
+9960db2 Add CLEAR_ALL support: delete all patients and sync update to other tabs
+e5c92b4 Fix WASM loading issue in vite.config.js with assetsInclude
+23b0f0f Exclude @electric-sql/pglite from Vite dependency optimization to avoid runtime conflicts
+495587f (HEAD -> master) Add README with setup, deployment, commit history, and challenges faced
 ```
 
 > You can view the full history with:  
@@ -108,4 +110,4 @@ assetsInclude: ['**/*.wasm']
 
 ## 🙋 Author
 
-Made with ❤️ by Harikiran (https://github.com/harikiran1459)
+Made by Harikiran (https://github.com/harikiran1459)
